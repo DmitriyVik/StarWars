@@ -1,0 +1,197 @@
+*, *::before, *::after
+  box-sizing: border-box
+  
+  
+body
+  // background-color: #070506
+  background: #010101 url(../img/main-bg.jpg) top right 90% no-repeat
+  // background-attachment: fixed
+  // background-size: cover
+  // background-image: url(../img/main-bg.jpg)
+  // background-repeat: no-repeat
+  color: #fff
+  font-family: 'Roboto', sans-serif
+.container
+  max-width: 1060px
+  width: 90%
+  margin: 90px auto
+
+
+.header
+  display: flex
+  align-items: center
+  margin-bottom: 78px
+  &__logo
+    margin-right: 71px
+
+.nav
+  &__link
+    color: #fff
+    text-decoration: none
+    font-size: 16px
+    margin-right: 15px
+
+.hero
+  &__subtitle
+    font-weight: 900
+    font-size: 40px
+    line-height: 100%
+  &__title
+    padding: 0
+    font-weight: 900
+    font-size: 64px
+    line-height: 78px
+    margin-top: 5px
+    margin-bottom: 25px
+  &__desription
+    width: 50%
+    font-size: 18px
+    line-height: 150%
+    color: #AFAFAF
+    margin-bottom: 25px
+  &__premier
+    display: block
+    font-size: 18px
+    line-height: 150%
+    color: #B02000
+    margin-bottom: 5px
+  &__data
+    display: block
+    font-size: 24px
+    line-height: 150%
+    margin-bottom: 46px
+  &__button-play
+    border: none
+    background: linear-gradient(90deg, #FB641A 0%, #FC3309 100%)
+    border-radius: 300px
+    padding: 25px 87px 25px 34px 
+    font-size: 14px
+    line-height: 16px
+    text-transform: uppercase
+    color: #FFFFFF
+    position: relative
+    cursor: pointer
+    text-decoration: none
+    &::after
+      content: ''
+      width: 65px
+      height: 65px
+      background: #FFF url(../img/triangle.svg) center no-repeat
+      display: block
+      border-radius: 50%
+      position: absolute
+      right: -8px
+      top: 50%
+      transform: translateY(-50%)
+      box-sizing: content-box
+      border: 8px solid rgba(255,255,255,0.3)
+      // -moz-background-clip: border;
+      // -webkit-background-clip: border;
+      // background-clip: border-box;
+      // -moz-background-clip: padding;
+      // -webkit-background-clip: padding;
+      // background-clip: padding-box;
+      -moz-background-clip: content
+      -webkit-background-clip: content
+      background-clip: content-box
+
+.episode
+  &__title
+    padding: 0
+    margin: 0
+    margin-top: 60px
+    margin-bottom: 24px
+    font-size: 18px
+    line-height: 150%
+
+.slider
+  
+  &__item
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 250px  
+    height: 200px
+    background: linear-gradient(0deg, rgba(80, 80, 80, 0.86), rgba(80, 80, 80, 0.86))
+    box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.25)
+    border-radius: 10px
+    padding: 30px
+    border-radius: 10px
+    cursor: pointer
+    // transition: 1s
+    position: relative
+    overflow: hidden
+    margin: 10px
+    &:hover
+      background: linear-gradient(0deg, rgba(64, 101, 255, 0.86), rgba(64, 101, 255, 0.86))
+  &__year
+    font-size: 18px
+    line-height: 150%
+  &__title
+    margin: 0
+    font-size: 18px
+    line-height: 150%
+  &__raiting
+    font-size: 13px
+    line-height: 150%
+  &__raiting-label
+    margin-right: 10px
+  &__img
+    height: 100%
+    width: auto !important
+    position: absolute
+    z-index: -1
+    top: 0
+    left: 50%
+    transform: translateX(-50%)
+  &__raiting-stars
+
+.star
+  display: inline-block
+  width: 12px
+  height: 12px
+  background: url(../img/star.svg) no-repeat center
+
+.star-o
+  background: url(../img/star-o.svg) no-repeat center
+
+.slide-prev
+  width: 32px
+  height: 32px
+  border: none
+  background: transparent url(../img/left-arrow.svg) no-repeat center
+  margin-right: 16px
+  cursor: pointer
+  span
+    display: none
+
+.slide-next
+  width: 32px
+  height: 32px
+  border: none
+  background: transparent url(../img/right-arrow.svg) no-repeat center
+  cursor: pointer
+  span
+    display: none
+
+@media (max-width: 637px) 
+  .container
+    margin: 30px auto
+  .hero
+    &__subtitle
+      font-size: 26px
+    &__title
+      font-size: 30px
+      line-height: 100%
+    &__desription
+      width: 100%
+  .header
+    flex-direction: column
+    align-items: start
+    margin-bottom: 20px
+    &__logo
+      margin-bottom: 10px
+  .nav
+    display: flex
+    flex-direction: column
+
